@@ -1,5 +1,5 @@
 site_name: YOLO-ONNX Documentation
-site_url: https://github.com/niraj-ghetiya/mkdoc-test
+site_url: https://niraj-ghetiya.github.io/mkdoc-test/
 site_description: Documentation for YOLO-ONNX, a Python library for running YOLO models in ONNX format with Ultralytics.
 site_author: Niraj Ghetiya
 
@@ -7,6 +7,9 @@ theme:
   name: material
   logo: assets/logo.jpg
   favicon: assets/favicon.ico
+  language: en
+  icon:
+    repo: fontawesome/brands/github
   palette:
     - scheme: default
       primary: deep purple
@@ -24,19 +27,76 @@ theme:
     - navigation.top
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - toc.integrate
+    - toc.follow
+    - header.autohide
     - content.code.copy
     - content.action.edit
     - content.action.view
     - content.tabs.link
-    - header.autohide
+    - content.button
+    - content.footnotes
+    - content.tooltips
+    - content.code.annotate
     - search.suggest
     - search.highlight
     - search.share
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 repo_url: https://github.com/niraj-ghetiya/mkdoc-test
 repo_name: niraj-ghetiya/mkdoc-test
 edit_uri: edit/main/docs/
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/niraj-ghetiya
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/niraj-ghetiya
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourusername  # Optional
+  generator: false  # Hide 'Made with Material for MkDocs'
+  alternate:
+    - name: English
+      link: /
+      lang: en
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+            heading_level: 2
+  - git-revision-date
+  - git-authors
 
 nav:
   - Home: index.md
@@ -49,25 +109,3 @@ nav:
   - API Reference: api-reference.md
   - Contributing: contributing.md
   - License: license.md
-
-plugins:
-  - search
-  - mkdocstrings:
-      handlers:
-        python:
-          options:
-            show_source: true
-            heading_level: 2
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - toc:
-      permalink: true
