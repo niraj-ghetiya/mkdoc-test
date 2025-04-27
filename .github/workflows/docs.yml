@@ -27,7 +27,8 @@ jobs:
           pip install mkdocs
           pip install mkdocs-material
           pip install mkdocstrings
-          pip install mkdocstrings-python  # If you're using Python handler
+          pip install mkdocstrings-python 
+          pip install mkdocs mkdocs-material mkdocstrings mkdocstrings-python pymdown-extensions mkdocs-git-revision-date-localized-plugin mkdocs-git-authors-plugin # If you're using Python handler
           # Add more plugins if needed
 
       - name: Build and Deploy
