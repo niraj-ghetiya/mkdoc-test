@@ -1,5 +1,5 @@
 site_name: YOLO-ONNX Documentation
-site_url: https://niraj-ghetiya.github.io/yolo-onnx/
+site_url: https://github.com/niraj-ghetiya/mkdoc-test
 site_description: Documentation for YOLO-ONNX, a Python library for running YOLO models in ONNX format with Ultralytics.
 site_author: Niraj Ghetiya
 
@@ -13,10 +13,10 @@ theme:
     - content.tabs
     - navigation.sections
     - navigation.top
-  logo: assets/logo.png  # Optional: Add a logo in docs/assets/logo.png
+  logo: assets/logo.jpg  # Optional: Add a logo in docs/assets/logo.png
   favicon: assets/favicon.ico  # Optional: Add a favicon
 
-repo_url: https://github.com/niraj-ghetiya/yolo-onnx
+repo_url: https://github.com/niraj-ghetiya/mkdoc-test
 edit_uri: edit/main/docs/
 
 nav:
