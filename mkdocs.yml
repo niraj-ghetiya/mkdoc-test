@@ -1,0 +1,51 @@
+site_name: YOLO-ONNX Documentation
+site_url: https://your-username.github.io/yolo-onnx/
+site_description: Documentation for YOLO-ONNX, a Python library for running YOLO models in ONNX format with Ultralytics.
+site_author: Your Name
+
+theme:
+  name: material
+  palette:
+    primary: deep purple
+    accent: amber
+  features:
+    - content.code.copy
+    - content.tabs
+    - navigation.sections
+    - navigation.top
+  logo: assets/logo.png  # Optional: Add a logo in docs/assets/logo.png
+  favicon: assets/favicon.ico  # Optional: Add a favicon
+
+repo_url: https://github.com/your-username/yolo-onnx
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quickstart: getting-started/quickstart.md
+  - Usage:
+      - Running Inference: usage/inference.md
+      - Examples: usage/examples.md
+  - API Reference: api-reference.md
+  - Contributing: contributing.md
+  - License: license.md
+
+plugins:
+  - search
+  - mkdocstrings:  # For generating API documentation from Python docstrings
+      handlers:
+        python:
+          options:
+            show_source: true
+            heading_level: 2
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed
