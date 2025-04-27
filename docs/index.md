@@ -1,4 +1,4 @@
-# Welcome to YOLO-ONNX
+# Welcome to YOLO-ONNX.
 
 YOLO-ONNX is a Python library for running YOLO models in ONNX format using the Ultralytics framework. It simplifies model loading, inference, and deployment across various platforms, including CPUs, GPUs, and edge devices.
 
