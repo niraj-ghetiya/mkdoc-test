@@ -18,3 +18,22 @@ We welcome contributions! Check out the [Contributing Guide](contributing.md) to
 
 ## License
 YOLO-ONNX is licensed under the MIT License. See the [License](license.md) for details.
+
+## 💬 Comments
+
+<div id="giscus-comments"></div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="niraj-ghetiya/mkdoc-test"
+        data-repo-id="YOUR_REPO_ID"
+        data-category="General"
+        data-category-id="YOUR_CATEGORY_ID"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>

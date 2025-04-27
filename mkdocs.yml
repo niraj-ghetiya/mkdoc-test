@@ -39,9 +39,11 @@ theme:
     - content.footnotes
     - content.tooltips
     - content.code.annotate
+    - content.code.select
     - search.suggest
     - search.highlight
     - search.share
+    - announce.dismiss
   font:
     text: Roboto
     code: Roboto Mono
@@ -57,12 +59,25 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/niraj-ghetiya
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/yourusername  # Optional
-  generator: false
+      link: https://twitter.com/yourusername
   alternate:
     - name: English
       link: /
       lang: en
+  giscus:
+    repo: niraj-ghetiya/mkdoc-test
+    repo_id: R_kgDOOgaRqg
+    category: General
+    category_id: DIC_kwDOOgaRqs4Cpg1K
+    mapping: pathname
+    reactions_enabled: "1"
+    emit_metadata: "0"
+    input_position: bottom
+    theme:
+      light: light
+      dark: dark
+    lang: en
+  generator: false
 
 nav:
   - Home: index.md
