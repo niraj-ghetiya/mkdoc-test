@@ -58,11 +58,34 @@ extra:
       link: https://linkedin.com/in/niraj-ghetiya
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/yourusername  # Optional
-  generator: false  # Hide 'Made with Material for MkDocs'
+  generator: false
   alternate:
     - name: English
       link: /
       lang: en
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quickstart: getting-started/quickstart.md
+  - Usage:
+      - Running Inference: usage/inference.md
+      - Examples: usage/examples.md
+  - API Reference: api-reference.md
+  - Contributing: contributing.md
+  - License: license.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+            heading_level: 2
+  - git-revision-date-localized
+  - git-authors
 
 markdown_extensions:
   - admonition
@@ -79,33 +102,10 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.keys
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
   - toc:
       permalink: true
-
-plugins:
-  - search
-  - mkdocstrings:
-      handlers:
-        python:
-          options:
-            show_source: true
-            heading_level: 2
-  - git-revision-date
-  - git-authors
-
-nav:
-  - Home: index.md
-  - Getting Started:
-      - Installation: getting-started/installation.md
-      - Quickstart: getting-started/quickstart.md
-  - Usage:
-      - Running Inference: usage/inference.md
-      - Examples: usage/examples.md
-  - API Reference: api-reference.md
-  - Contributing: contributing.md
-  - License: license.md
