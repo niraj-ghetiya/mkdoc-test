@@ -33,7 +33,7 @@ YOLO-ONNX is licensed under the MIT License. See the [License](license.md) for d
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="light"
+        data-theme="preferred_color_scheme"
         data-lang="en"
         crossorigin="anonymous"
         async>

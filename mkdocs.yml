@@ -79,6 +79,9 @@ extra:
     lang: en
   generator: false
 
+extra_javascript:
+  - https://giscus.app/client.js
+
 nav:
   - Home: index.md
   - Getting Started:
